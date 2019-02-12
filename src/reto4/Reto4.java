@@ -8,7 +8,7 @@ public class Reto4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char opcion;
-        double costo_boleto;
+        double costo_boleto = 0.00;
         
         do{
             System.out.println("Indique el tipo de boleto");
