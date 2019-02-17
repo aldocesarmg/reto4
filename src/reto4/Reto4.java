@@ -7,16 +7,34 @@ public class Reto4 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int tamPiram;
-        
-        System.out.println("Ingresa el tamaño de la pirámide: ");
-        tamPiram = sc.nextInt();
-        
-        
-        
         char opcion;
         double costo_boleto = 0.00;
+        int tamPiram, contador, contador2;
         
+        System.out.println("Ingresa el tamaño de la pirámide: ");
+        tamPiram = Integer.parseInt(sc.next());
+        contador = tamPiram;
+        contador2 = tamPiram++;
+        
+        while(contador >= 0){            
+            for(int i = 0; contador > i; i++){
+                System.out.print(" ");
+            }
+            /*while(contador<contador2){
+                System.out.print("*");
+                contador2--;
+            }
+            */
+            for(int i = contador2; contador<i; i--){
+                System.out.print("*");
+            }
+            for(int i = contador2-1; contador<i; i--){
+                System.out.print("*");
+            }
+            
+            contador--;
+            System.out.println(" ");
+        }
         do{
             System.out.println("Indique el tipo de boleto");
             opcion = sc.next().charAt(0);
