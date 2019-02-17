@@ -20,21 +20,16 @@ public class Reto4 {
             for(int i = 0; contador > i; i++){
                 System.out.print(" ");
             }
-            /*while(contador<contador2){
-                System.out.print("*");
-                contador2--;
-            }
-            */
             for(int i = contador2; contador<i; i--){
                 System.out.print("*");
             }
             for(int i = contador2-1; contador<i; i--){
                 System.out.print("*");
             }
-            
             contador--;
             System.out.println(" ");
         }
+        
         do{
             System.out.println("Indique el tipo de boleto");
             opcion = sc.next().charAt(0);
