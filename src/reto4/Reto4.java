@@ -7,6 +7,13 @@ public class Reto4 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int tamPiram;
+        
+        System.out.println("Ingresa el tamaño de la pirámide: ");
+        tamPiram = sc.nextInt();
+        
+        
+        
         char opcion;
         double costo_boleto = 0.00;
         
